@@ -30,7 +30,7 @@ useEffect( () => {
                 animation.playbackRate = speed/2-1;
                 }
                 else if (speed > 1.2) {
-                  animation.playbackRate = speed/2;
+                  animation.playbackRate = speed;
                 } 
                 else {
                   animation.playbackRate = 0;
@@ -40,9 +40,14 @@ useEffect( () => {
   return (
     <div >
       <div class="scenery" id="background1" ref ={ ref}>
-        <img id="r_pawn_upright" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/r_pawn_upright_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/r_pawn_upright.png 2x" alt=" " />
-        <img id="w_rook" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/w_rook_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/w_rook.png 2x" alt=" " />
-        <img id="palm1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm1_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm1.png 2x" alt=" " />
+       
+        <img 
+                id="palm3" 
+                src="https://www.pngkit.com/png/full/286-2869481_logs-clip-art-at-clker-com-vector-wood.png" 
+                alt=" " 
+                height = "90"
+                width = "150"
+        />
       </div>
     </div>
   )
