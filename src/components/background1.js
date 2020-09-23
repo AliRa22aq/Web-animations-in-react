@@ -30,7 +30,7 @@ useEffect( () => {
                 animation.playbackRate = speed/2-1;
                 }
                 else if (speed > 1.2) {
-                  animation.playbackRate = speed;
+                  animation.playbackRate = speed -0.2;
                 } 
                 else {
                   animation.playbackRate = 0;
