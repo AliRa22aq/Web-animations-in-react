@@ -1,14 +1,12 @@
-import React, { useEffect, useRef, useState, useLayoutEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import useWebAnimations, { headShake } from "@wellyshen/use-web-animations";
-import Queen_and_alice from './components/queen_and_alice'
-import speed from './components/queen_and_alice'
+
 
 import Background1 from './components/background1';
 import Background2 from './components/background2';
 import Forground1 from './components/Forground1';
 import Forground2 from './components/Forground2';
-import { Test } from './components/Test';
 
 var spriteFrames = [
   { transform: 'translateY(0)' },
@@ -76,7 +74,9 @@ useEffect(()=>{
       </div>
 
       <Background1 speed = {speed}/>
+      <Background2 speed = {speed} />
       <Forground1 speed = {speed} />
+      <Forground2 speed = {speed} />
 
 
     </div>
