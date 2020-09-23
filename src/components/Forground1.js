@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import '../App.css';
 import useWebAnimations from "@wellyshen/use-web-animations";
 
@@ -10,22 +10,35 @@ var sceneryFrames =   [
   
   var sceneryTimingForeground = {
     duration: 12000,
-    iterations: Infinity
+    iterations: Infinity,
   };
 
-function Forground1() {
-    const { ref, playState, getAnimation } = useWebAnimations({
+function Forground1({speed}) {
+    const { ref, getAnimation } = useWebAnimations({
         keyframes: sceneryFrames,
-        timing: sceneryTimingForeground
-
+        timing: sceneryTimingForeground,
+        onReady: ({ animation }) => {
+          animation.currentTime = animation.effect.getTiming().duration / 2
+        },
+      })
+    
+    useEffect( () => {
+      const animation =  getAnimation();
+                  if (speed < 0.8) {
+                    animation.playbackRate = speed/2-1;
+                    }
+                    else if (speed > 1.2) {
+                      animation.playbackRate = speed/2;
+                    } 
+                    else {
+                      animation.playbackRate = 0;
+                    } 
     })
-
     return (
         <div>
-            <div class="scenery" id="foreground1" ref = {ref}>
+        <div class="scenery" id="foreground1" ref = {ref}>
                 <img id="palm3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm3_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm3.png 2x" alt=" " />
             </div>
-
         </div>
     )
 }
