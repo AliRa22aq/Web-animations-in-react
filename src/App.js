@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import './App.css';
 import useWebAnimations from "@wellyshen/use-web-animations";
 
@@ -44,7 +44,7 @@ function App() {
     }    
     }
 
-useEffect(()=>{
+useLayoutEffect(()=>{
 
     setInterval(()=> {
       const animation = getAnimation(); 
