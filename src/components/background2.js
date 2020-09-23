@@ -26,7 +26,7 @@ function Background2({speed}) {
                     animation.playbackRate = speed/2-1;
                     }
                     else if (speed > 1.2) {
-                      animation.playbackRate = speed/2;
+                      animation.playbackRate = speed;
                     } 
                     else {
                       animation.playbackRate = 0;
@@ -36,9 +36,8 @@ function Background2({speed}) {
     return (
         <div>
             <div class="scenery" id="background2" ref = {ref}>
-                <img id="r_pawn" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/r_pawn_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/r_pawn.png 2x" alt=" " />
-                <img id="r_knight" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/r_knight_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/r_knight.png 2x" alt=" " />
-                <img id="palm2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm2_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm2.png 2x" alt=" " />
+                <img id="r_pawn" src="https://i.pinimg.com/originals/50/13/f2/5013f2075b43362774867e0f2536baca.png" alt=" " sizes= "75%" />
+
             </div>
         </div>
     )
