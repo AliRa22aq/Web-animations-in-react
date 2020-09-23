@@ -37,7 +37,16 @@ function Forground1({speed}) {
     return (
         <div>
         <div class="scenery" id="foreground1" ref = {ref}>
-                <img id="palm3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm3_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/palm3.png 2x" alt=" " />
+                
+                <img 
+                id="palm2" 
+                src="https://i.pinimg.com/originals/fe/34/50/fe34509ae2178c90c2ca3db059653190.png" 
+                alt=" " 
+                height = "400"
+                width = "400"
+
+                />
+
             </div>
         </div>
     )
