@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import useWebAnimations, { headShake } from "@wellyshen/use-web-animations";
+import useWebAnimations from "@wellyshen/use-web-animations";
 
 
 import Background1 from './components/background1';
@@ -30,7 +30,7 @@ function App() {
   const { ref, getAnimation } = useWebAnimations({
     keyframes: spriteFrames,
     timing: spiritTimings,
-    onReady: ({ playState, animate, animation }) => {
+    onReady: ({ animation }) => {
       animation.currentTime = animation.effect.getTiming().duration / 2
     },
       
