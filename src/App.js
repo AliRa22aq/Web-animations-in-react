@@ -55,7 +55,7 @@ useEffect(()=>{
         }
     }, 1000)
 
-  },[] )
+  },[getAnimation()] )
 
 
   return (
