@@ -26,7 +26,7 @@ function Forground2({speed}) {
                     animation.playbackRate = speed/2-1;
                     }
                     else if (speed > 1.2) {
-                      animation.playbackRate = speed/2;
+                      animation.playbackRate = speed*0.25;
                     } 
                     else {
                       animation.playbackRate = 0;
@@ -36,8 +36,16 @@ function Forground2({speed}) {
     return (
         <div>
             <div class="scenery" id="foreground2" ref = {ref}>
-                <img id="bush" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bush_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bush.png 2x" alt=" " />
-                <img id="w_rook_upright" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/w_rook_upright_small.png" srcset="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/w_rook_upright.png 2x" alt=" " />
+                <img 
+                id="bush" 
+                src="https://media3.giphy.com/media/1wX7G4WO2BufrboYhj/giphy.gif"
+                alt=" " 
+                height = "200"
+                width = "300"
+                />
+
+
+
             </div>
 
 
