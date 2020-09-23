@@ -55,7 +55,7 @@ useLayoutEffect(()=>{
         }
     }, 1000)
 
-  },[getAnimation()] )
+  },getAnimation() )
 
 
   return (
