@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import '../App.css';
 import useWebAnimations from "@wellyshen/use-web-animations";
 
+
 /* Background animations */
 var sceneryFrames =   [
     { transform: 'translateX(100%)' },
@@ -36,6 +37,7 @@ function Forground1({speed}) {
     })
     return (
         <div>
+
         <div class="scenery" id="foreground1" ref = {ref}>
                 
                 <img 
@@ -48,6 +50,8 @@ function Forground1({speed}) {
                 />
 
             </div>
+
+
         </div>
     )
 }
