@@ -56,15 +56,6 @@ useLayoutEffect(()=>{
 
   },[] )
 
-
-
-  /// saveeeee
-
-  const { ref: save } = useWebAnimations({
-    keyframes: spriteFrames,
-    timing: spiritTimings  
-  })
-
   return (
     <div onClick={() => { speedUp() }}>
 
