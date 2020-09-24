@@ -35,7 +35,7 @@ useEffect( () => {
                 else {
                   animation.playbackRate = speed - 0.2;
                 } 
-}, [])
+}, [getAnimation])
 
   return (
     <div >
