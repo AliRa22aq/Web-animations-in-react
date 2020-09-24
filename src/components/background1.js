@@ -27,15 +27,15 @@ function Background1({speed}) {
 useEffect( () => {
   const animation =  getAnimation();
               if (speed < 0.8) {
-                animation.playbackRate = speed/2-1;
+                animation.playbackRate = speed ;
                 }
                 else if (speed > 1.2) {
-                  animation.playbackRate = speed -0.2;
+                  animation.playbackRate = speed - 0.5;
                 } 
                 else {
-                  animation.playbackRate = 0;
+                  animation.playbackRate = speed - 0.2;
                 } 
-})
+}, [])
 
   return (
     <div >
