@@ -96,7 +96,7 @@ img {
 
 .sky {
   background: #246e89 
-  url("https://cdn.gamedevmarket.net/wp-content/uploads/20191203185200/Game_Background_38.jpg") repeat-x 100% ;
+  url("https://cdn.gamedevmarket.net/wp-content/uploads/20191203185200/Game_Background_38.jpg") repeat-x 100% 100% /  100% auto; 
   top: 0;
 }
 
@@ -109,7 +109,6 @@ html, body {
   overflow: hidden;
   position: relative;
 }
-
 
 #lion {
   position: absolute;
