@@ -2,7 +2,6 @@ import React, { useLayoutEffect, useState } from 'react';
 import './App.css';
 import useWebAnimations from "@wellyshen/use-web-animations";
 
-
 import Background1 from './components/background1';
 import Background2 from './components/background2';
 import Forground1 from './components/Forground1';
@@ -27,7 +26,7 @@ function App() {
   const [speed, setspeed] = useState(1)
 
   //Main Animation
-  const { ref, getAnimation } = useWebAnimations({
+  const { ref: alice, getAnimation } = useWebAnimations({
     keyframes: spriteFrames,
     timing: spiritTimings,
     onReady: ({ animation }) => {
@@ -58,20 +57,28 @@ useLayoutEffect(()=>{
   },[] )
 
 
+
+  /// saveeeee
+
+  const { ref: save } = useWebAnimations({
+    keyframes: spriteFrames,
+    timing: spiritTimings  
+  })
+
   return (
-    <div onClick={() => { speedUp() }}>                                
+    <div onClick={() => { speedUp() }}>
+
 
       <div class="sky"></div>
       <div class="earth">
-        <div>                    
+        <div>
           <div id="red-queen_and_alice">
             <img
-              ref={ref}
+              ref={alice}
               id="red-queen_and_alice_sprite"
               src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/sprite_running-alice-queen_small.png"
               alt="Alice and the Red Queen running to stay in place." />
           </div>
-
         </div>
       </div>
 
@@ -80,8 +87,7 @@ useLayoutEffect(()=>{
       <Forground1 speed = {speed} />
       <Forground2 speed = {speed} />
       <Lion speed = {speed}/>
-
-
+      
     </div>
 
   );
