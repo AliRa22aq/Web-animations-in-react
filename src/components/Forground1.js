@@ -34,8 +34,10 @@ function Forground1({speed}) {
                     else {
                       animation.playbackRate = speed -0.2;
                     } 
-    }, [getAnimation])
-    return (
+                  }, [getAnimation, speed])
+
+
+return (
         <div>
 
         <div class="scenery" id="foreground1" ref = {ref}>
