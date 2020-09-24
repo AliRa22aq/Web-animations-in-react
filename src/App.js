@@ -52,9 +52,9 @@ useLayoutEffect(()=>{
         setspeed(animation.playbackRate);
 
         }
-    }, 1000)
+    }, 1500)
 
-  },[] )
+  },[getAnimation] )
 
   return (
     <div onClick={() => { speedUp() }}>
