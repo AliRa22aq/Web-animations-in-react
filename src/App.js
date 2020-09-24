@@ -55,11 +55,11 @@ useLayoutEffect(()=>{
         }
     }, 1000)
 
-  },getAnimation() )
+  }, getAnimation )
 
 
   return (
-    <div onClick={() => { speedUp() }}>
+    <div onClick={() => { speedUp() }}>                                
 
       <div class="sky"></div>
       <div class="earth">
